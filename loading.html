@@ -1,1 +1,83 @@
+make interesting site on html with a lot of svg animations
 
+<!DOCTYPE html>
+<html>
+<head>
+<title>Interesting Site With SVG Animations</title>
+<style>
+
+body {
+  font-family: sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+#animation-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#animation-container circle {
+  stroke: #fff;
+  stroke-width: 8px;
+  fill: none;
+  animation: drawCircle 10s linear infinite;
+}
+
+@keyframes drawCircle {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+  100% {
+    stroke-dasharray: 500 100;
+  }
+}
+
+#animation-container rect {
+  fill: #fff;
+  animation: moveRect 10s linear infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes moveRect {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#animation-container line {
+  stroke: #fff;
+  stroke-width: 10px;
+  animation: drawLine 10s linear infinite;
+}
+
+@keyframes drawLine {
+  0% {
+    stroke-dasharray: 0 200;
+  }
+  100% {
+    stroke-dasharray: 1000 200;
+  }
+}
+
+</style>
+</head>
+<body>
+  <div id="animation-container">
+    <svg viewBox="0 0 500 500">
+      <circle cx="250" cy="250" r="200"/>
+      <rect x="200" y="100" width="100" height="100"/>
+      <line x1="0" y1="0" x2="500" y2="500"/>
+    </svg>
+  </div>
+</body>
+</html>
