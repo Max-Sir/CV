@@ -1,0 +1,244 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Android Software Engineer CV</title>
+    <script>
+
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        window.onload = () => {
+            document.getElementById("scrollTopBtn").style.display = "none";
+        }
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("scrollTopBtn").style.display = "block";
+            } else {
+                document.getElementById("scrollTopBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+    </script>
+    <style>
+        #scrollTopBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: #0080ff;
+            color: #fff;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.2rem;
+            color: #444;
+        }
+
+        h1 {
+            font-size: 2rem;
+            text-align: center;
+            text-transform: uppercase;
+            color: #000;
+        }
+
+
+        #cv {
+            width: 800px;
+            margin: 0 auto;
+            padding: 10px;
+            border-radius: 5px;
+            background: #F1F1F1;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile {
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+        .profile h2 {
+            font-size: 1.8rem;
+            font-weight: normal;
+            margin: 0;
+            padding: 0;
+            color: #000;
+        }
+
+        .profile h3 {
+            font-size: 1.2rem;
+            font-weight: normal;
+            margin: 0;
+            padding: 0;
+            color: #444;
+        }
+
+        .profile img {
+            border-radius: 50%;
+            width: 150px;
+            margin: 0 auto;
+            margin-bottom: 10px;
+        }
+
+        .icons img {
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            margin: 0 auto;
+            margin-bottom: 10px;
+        }
+
+        #experience {
+            padding: 10px 0;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+
+        #experience h3 {
+            font-size: 1.4rem;
+            font-weight: normal;
+            margin: 0;
+            padding: 0;
+            color: #000;
+        }
+
+        #experience ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #experience li {
+            padding: 8px 0;
+            font-size: 1.2rem;
+            color: #444;
+        }
+
+        #skills {
+            padding: 10px 0;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+
+        #skills h3 {
+            font-size: 1.4rem;
+            font-weight: normal;
+            margin: 0;
+            padding: 0;
+            color: #000;
+        }
+
+        #skills ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #skills li {
+            padding: 8px 0;
+            font-size: 1.2rem;
+            color: #444;
+        }
+
+        #education {
+            padding: 10px 0;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+
+        #education h3 {
+            font-size: 1.4rem;
+            font-weight: normal;
+            margin: 0;
+            padding: 0;
+            color: #000;
+        }
+
+        #education ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #education li {
+            padding: 8px 0;
+            font-size: 1.2rem;
+            color: #444;
+        }
+    </style>
+</head>
+
+<body>
+<div id="cv">
+    <h1>Curriculum Vitae</h1>
+    <div class="profile">
+        <img src="CV.png"/>
+        <h2>Maksim Syramalotau</h2>
+        <h3>Android Software Engineer</h3>
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/maksim-syramalotau-924a59176/"><img class="icons" src="linkedin.png"/></a>
+            <a href="https://github.com/maksim-syramalotau"><img class="icons" src="github.png"/></a>
+        </div>
+    </div>
+    <div id="experience">
+        <h3>Experience</h3>
+        <ul>
+            <li>Developed high-quality Android applications.</li>
+            <li>Integrated REST APIs with Android applications.</li>
+            <li>Created unit tests to ensure quality of code.</li>
+            <li>Worked with Git and version control systems.</li>
+            <li>Maintained existing code base and fixed bugs.</li>
+            <li>Collaborated with backend developers to create a secure and efficient application.</li>
+            <li>Developed UI/UX designs for applications using Figma.</li>
+            <li>Reviewed code from other developers and provided feedback.</li>
+
+        </ul>
+    </div>
+    <div id="skills">
+        <h3>Skills</h3>
+        <ul>
+            <li>Android SDK</li>
+            <li>Java, Kotlin, XML, JSON</li>
+            <li>REST APIs, Git, Gradle</li>
+            <li>Unit Testing, Debugging</li>
+            <li>Agile Methodology</li>
+            <li>Firebase, MVVM, Dependency Injection</li>
+            <li>RxJava, RxAndroid</li>
+            <li>API Integrations, Retrofit</li>
+            <li>Database Design & Implementation</li>
+            <li>Data Structures & Algorithms</li>
+            <li>Object Oriented Design & Programming</li>
+            <li>Continuous Integration & Delivery</li>
+            <li>Software Design Patterns</li>
+            <li>Clean Code Practices</li>
+            <li>Mobile Security & Privacy</li>
+        </ul>
+    </div>
+    <div id="education">
+        <h3>Education</h3>
+        <ul>
+            <li>B.Tech in Computer Science & Engineering, XYZ University, 2016</li>
+        </ul>
+    </div>
+</div>
+<button id="scrollTopBtn">Scroll to top</button>
+</body>
+
+</html>
